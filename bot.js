@@ -7,10 +7,10 @@ const client = new commando.CommandoClient({
 });
 
 client.login(config.token);
-
 client.registry.registerGroups([
     ['mod', 'mod commands'],
-    ['misc', 'misc commands']
+    ['misc', 'misc commands'],
+    ['roles', 'roles commands']
 ]).registerDefaults()
 .registerCommandsIn(path.join(__dirname, 'commands'));
 
