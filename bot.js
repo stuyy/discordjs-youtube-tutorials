@@ -5,12 +5,12 @@ const client = new commando.CommandoClient({
     owner: config.ownerId,
     commandPrefix: config.prefix
 });
-
 client.login(config.token);
 client.registry.registerGroups([
     ['mod', 'mod commands'],
     ['misc', 'misc commands'],
-    ['roles', 'roles commands']
+    ['roles', 'roles commands'],
+    ['music', 'music bot commands']
 ]).registerDefaults()
 .registerCommandsIn(path.join(__dirname, 'commands'));
 
