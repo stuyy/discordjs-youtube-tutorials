@@ -1,13 +1,11 @@
 const commando = require('discord.js-commando');
 const path = require('path');
-// const config = require(path.join(__dirname, 'config', 'config.json'))
+const config = require(path.join(__dirname, 'config', 'config.json'))
 const client = new commando.CommandoClient({
-    owner: process.env.ownerId,
-    commandPrefix: process.env.prefix
+    owner: config.ownerId,
+    commandPrefix: config.prefix
 });
-
-client.login(process.env.TOKEN);
-
+client.login(config.token);
 client.registry.registerGroups([
     ['mod', 'mod commands'],
     ['misc', 'misc commands'],
