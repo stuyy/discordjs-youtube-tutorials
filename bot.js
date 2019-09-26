@@ -5,7 +5,9 @@ const client = new commando.CommandoClient({
     owner: config.ownerId,
     commandPrefix: config.prefix
 });
-client.login(config.token);
+
+client.login(process.env.TOKEN);
+
 client.registry.registerGroups([
     ['mod', 'mod commands'],
     ['misc', 'misc commands'],
