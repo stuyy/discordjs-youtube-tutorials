@@ -1,0 +1,15 @@
+{
+    "fun" : {
+        "0001" : "Date+Time User Invoked Command",
+        "0002" : "Date+Time User Invoked Command",
+        "0003" : "Date+Time User Invoked Command",
+        "0004" : "Date+Time User Invoked Command",
+        "0005" : "Date+Time User Invoked Command",
+        "0006" : "Date+Time User Invoked Command",
+        "0007" : "Date+Time User Invoked Command"
+    },
+    "misc" : {
+        "0010" : "Date+Time User Invoked Command",
+        "0023" : "Date+Time User Invoked Command"
+    }
+}
